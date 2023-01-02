@@ -1,0 +1,19 @@
+.seccion-one {
+    background: url(./img/textura\ papel\ con\ fondo.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar div {
+    display: flex;
+}
+
+a {
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top:9%;
+    margin-left: 1%;
+}
+
+.main-logo {
+    margin: 2% 5%;
+    margin-right: 15%;
+}
