@@ -1,0 +1,27 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #e2e2e2;
+}
+
+form {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 25%;
+    margin-left: 37%;
+}
+
+.logo img {
+    width: 10rem;
+    margin-left: 25%;
+    margin-bottom: 7%;
+}
+
+.btn {
+    background-color: #7ecb5e;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #6eb351;
+    color: white;
+}

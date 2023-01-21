@@ -12,22 +12,22 @@
 </head>
 <body>
     <nav class="navbar">
-        <div>
-            <div class="main-logo">
-                <a class="navbar-brand" href="#">
-                    <img src="img/LOGO AGRIMENSURA-01-01 copia.png" alt="logo colegio agrimensores" >
-                </a>
-            </div>
-            <button class="navbutton" href="#">Inicio</button>
-            <button class="navbutton" href="#">Novedades</button>
-            <button class="navbutton" href="#">Profesionales</button>
-            <button class="navbutton" href="#">Normativas</button>
-            <button class="navbutton" href="#" id="style-contact">Contacto</button>
-            <button class="navbutton" href="#" id="style-login">Iniciar Sesión</button>
-        </div>
+      <div>
+          <div class="main-logo">
+              <a class="navbar-brand" href="#inicio">
+                  <img src="img/LOGO AGRIMENSURA-01-01 copia.png" alt="logo colegio agrimensores" >
+              </a>
+          </div>
+          <a href="#inicio"><button class="navbutton">Inicio</button></a>
+          <a href=""><button class="navbutton">Novedades</button></a>
+          <a href="#profesionales"><button class="navbutton">Profesionales</button></a>
+          <a href="#normativas"><button class="navbutton">Normativas</button></a>
+          <a href="#contacto"><button class="navbutton" id="style-contact">Contacto</button></a>
+          <a href="login.html"><button class="navbutton" id="style-login">Iniciar Sesión</button></a>
+      </div>
     </nav>
 
-    <div class="first">
+    <div class="first" id="inicio">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -50,7 +50,7 @@
             </button>
         </div>
 
-        <table class="table table-borderless">
+        <table class="table table-borderless" id="profesionales">
             <div class="table-encabezado">
                 <h2>AGRIMENSORES 2023</h2>
                 <div id="subtitulo">
@@ -160,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="third">
+            <div class="third" id="normativas">
                 <div class="normativas">
                     <h2 id="letra-w">NORMATIVAS</h2>
                 </div>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
     
-                <footer>
+                <footer id="contacto">
                     <div class="info-contacto">
                         <ul>
                             <li>Lunes a Viernes: 8:00 a 12:00hs</li>
