@@ -6,161 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ce2c480657.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="img/LOGO AGRIMENSURA-01-01 copia.png">
     <title>Colegio de Agrimensores</title>
 </head>
 <body>
-  <nav class="navbar">
-    <div>
-        <div class="main-logo">
-            <a class="navbar-brand" href="#inicio">
-                <img src="img/LOGO AGRIMENSURA-01-01 copia.png" alt="logo colegio agrimensores" >
-            </a>
-        </div>
-        <a href="#inicio"><button class="navbutton">Inicio</button></a>
-        <a href="#profesionales"><button class="navbutton">Profesionales</button></a>
-        <a href="#normativas"><button class="navbutton">Normativas</button></a>
-        <a href="#novedades"><button class="navbutton">Novedades</button></a>
-        <a href="#contacto"><button class="navbutton" id="style-contact">Contacto</button></a>
-        <a href="login.html"><button class="navbutton" id="style-login">Iniciar Sesión</button></a>
-    </div>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <a class="main-logo" href="#inicio">
+        <img src="img/LOGO AGRIMENSURA-01-01 copia.png" alt="logo colegio agrimensores" >
+      </a>
+      <div class="barra-menu" id="barra-menu">
+        <img src="img/barra-menu.png" alt="barra menu">
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#inicio"><button class="navbutton">Inicio</button></a></li>
+        <li><a href="#profesionales"><button class="navbutton">Profesionales</button></a></li>
+        <li><a href="#normativas"><button class="navbutton">Normativas</button></a></li>
+        <li><a href="#novedades"><button class="navbutton">Novedades</button></a></li>
+        <li><a href="#contacto"><button class="navbutton" id="style-contact">Contacto</button></a></li>
+        <li><a href="login.html"><button class="navbutton" id="style-login">Iniciar Sesión</button></a></li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="first" id="inicio">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/institucion.jpg" alt="institucion">
-          </div>
-          <div class="carousel-item">
-            <img src="img/donde estudiar.jpg"  alt="donde estudiar">
-          </div>
-          <div class="carousel-item">
-            <img src="img/horarios.jpg" alt="horarios">
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/institucion.jpg" alt="institucion">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <img src="img/donde estudiar.jpg"  alt="donde estudiar">
+        </div>
+        <div class="carousel-item">
+          <img src="img/horarios.jpg" alt="horarios">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <table class="table table-borderless" id="profesionales">
-        <div class="table-encabezado">
-            <h2>AGRIMENSORES 2023</h2>
-            <div id="subtitulo">
-                <h4>PROFESIONALES ACTIVOS</h4>
-            </div>
-        </div>
-        <thead>
-          <tr>
-            <th scope="col"><h5>MATRÍCULA</h5></th>
-            <th scope="col"><h5>AGRIMENSORES 2023</h5></th>
-            <th scope="col"><h5>LOCALIDAD</h5></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>110</td>
-            <td>Ariasgago Hector Enzo</td>
-            <td>OBERÁ</td>
-          </tr>
-          <tr>
-            <td>201</td>
-            <td>Baumgratz Rodrigo Oscar</td>
-            <td>PTO. RICO</td>
-          </tr>
-          <tr>
-            <td>85</td>
-            <td>Blanco Delfor</td>
-            <td>POSADAS</td>
-          </tr>
-          <tr>
-            <td>128</td>
-            <td>Camblog Cesar Leonardo</td>
-            <td>POSADAS</td>
-          </tr>
-        </tbody>
+      <div class="table-encabezado">
+          <h2>AGRIMENSORES 2023</h2>
+          <div id="subtitulo">
+              <h4>PROFESIONALES ACTIVOS</h4>
+          </div>
+      </div>
+      <thead>
+        <tr>
+          <th scope="col"><h5>MATRÍCULA</h5></th>
+          <th scope="col"><h5>AGRIMENSORES 2023</h5></th>
+          <th scope="col"><h5>LOCALIDAD</h5></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>110</td>
+          <td>Ariasgago Hector Enzo</td>
+          <td>OBERÁ</td>
+        </tr>
+        <tr>
+          <td>201</td>
+          <td>Baumgratz Rodrigo Oscar</td>
+          <td>PTO. RICO</td>
+        </tr>
+        <tr>
+          <td>85</td>
+          <td>Blanco Delfor</td>
+          <td>POSADAS</td>
+        </tr>
+        <tr>
+          <td>128</td>
+          <td>Camblog Cesar Leonardo</td>
+          <td>POSADAS</td>
+        </tr>
+      </tbody>
     </table>
 
     <div class="second">
       <h2 id="autoridades-encabezado">AUTORIDADES DEL COLEGIO</h2>
 
       <div class="autoridades-fila1">
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">PRESIDENTE</h5>
-                <p class="card-text">Ingreniero Agrimensor <br> Mauricio Carlos Vera <br> Mat. Nº 195</p>
-              </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">PRESIDENTE</h5>
+            <p class="card-text">Ingreniero Agrimensor <br> Mauricio Carlos Vera <br> Mat. Nº 195</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">SECRETARIO GENERAL</h5>
-                <p class="card-text">Agrim. Dario Omar <br> Sanchez Escurra <br> Mat. Nº 194</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">SECRETARIO GENERAL</h5>
+            <p class="card-text">Agrim. Dario Omar <br> Sanchez Escurra <br> Mat. Nº 194</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">TESORERO</h5>
-                <p class="card-text">Agrim. Ernesto <br> Mariano Errecar <br> Mat. Nº 185</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">TESORERO</h5>
+            <p class="card-text">Agrim. Ernesto <br> Mariano Errecar <br> Mat. Nº 185</p>
           </div>
+        </div>
       </div>
 
       <div class="autoridades-fila2">
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">1ER VOCAL TITULAR</h5>
-                <p class="card-text">Agrim. <br> Carmelo Mónaca <br> Mat. Nº 134</p>
-              </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">1ER VOCAL TITULAR</h5>
+            <p class="card-text">Agrim. <br> Carmelo Mónaca <br> Mat. Nº 134</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">2DO VOCAL TITULAR</h5>
-                <p class="card-text">Agrim. Jorge <br> Omar Debarbora <br> Mat. Nº 102</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">2DO VOCAL TITULAR</h5>
+            <p class="card-text">Agrim. Jorge <br> Omar Debarbora <br> Mat. Nº 102</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">1ER VOCAL SUPLENTE</h5>
-                <p class="card-text">Agrim. Mario <br> Daniel Cabral <br> Mat. Nº 177</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">1ER VOCAL SUPLENTE</h5>
+            <p class="card-text">Agrim. Mario <br> Daniel Cabral <br> Mat. Nº 177</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">2DO VOCAL SUPLENTE</h5>
-                <p class="card-text">Agrim. Susana <br> Beatriz Sosa <br> Mat. Nº 101</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">2DO VOCAL SUPLENTE</h5>
+            <p class="card-text">Agrim. Susana <br> Beatriz Sosa <br> Mat. Nº 101</p>
           </div>
+        </div>
       </div>
 
       <div class="autoridades-fila3">
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">REVISOR DE CUENTAS TITULAR</h5>
-                <p class="card-text">Agrim. Pablo G. A. <br> Mastropierro <br> Mat. Nº 111</p>
-              </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">REVISOR DE CUENTAS TITULAR</h5>
+            <p class="card-text">Agrim. Pablo G. A. <br> Mastropierro <br> Mat. Nº 111</p>
           </div>
-          <div class="autoridades-card">
-              <img src="" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">REVISOR DE CUENTAS SUPLENTE</h5>
-                <p class="card-text">Ing. Geog. Fernando <br> Luis Taborda <br> Mat. Nº 036</p>
-              </div>
+        </div>
+        <div class="autoridades-card">
+          <img src="" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">REVISOR DE CUENTAS SUPLENTE</h5>
+            <p class="card-text">Ing. Geog. Fernando <br> Luis Taborda <br> Mat. Nº 036</p>
           </div>
+        </div>
       </div>
 
       <div class="third" id="normativas">
@@ -178,9 +182,11 @@
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                  <a href="">Ley 1105 - Exportaciones</a> <br>
-                  <a href="">Ley 26209 - Catastro</a> <br>
-                  <a href="">Código de Planeamiento</a>
+                <ul>
+                  <li><a href="">Ley 1105 - Exportaciones</a></li>
+                  <li><a href="">Ley 26209 - Catastro</a></li>
+                  <li><a href="">Código de Planeamiento</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -193,15 +199,17 @@
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                  <a href="">Ley Provincial de Catastro - 11/08/2011</a> <br>
-                  <a href="">Digesto Jurídico Provincial</a> <br>
-                  <a href="">Código de Ética</a> <br>
-                  <a href="">BO Digesto 86 - Año 2015 - PH y Prehorizontalidad</a> <br>
-                  <a href="">Digesto 56 - Año 1992 - Posesiones</a> <br>
-                  <a href="">BO 15044 - Ley II Nº 34 DGC (pag 31 en adelnate)</a> <br>
-                  <a href="">Decreto 1107/1958 - Reglamento de Mensuras (DGC)</a> <br>
-                  <a href="">BO 13066 - Ley II Nº 24 - DGC</a> <br>
-                  <a href="">BO 14092 - Disposición 125/2015 - Conjutos Inmobiliarios (DGC)</a>
+                <ul>
+                  <li><a href="">Ley Provincial de Catastro - 11/08/2011</a></li>
+                  <li><a href="">Digesto Jurídico Provincial</a> </li>
+                  <li><a href="">Código de Ética</a></li>
+                  <li><a href="">BO Digesto 86 - Año 2015 - PH y Prehorizontalidad</a></li>
+                  <li><a href="">Digesto 56 - Año 1992 - Posesiones</a></li>
+                  <li><a href="">BO 15044 - Ley II Nº 34 DGC (pag 31 en adelnate)</a></li>
+                  <li><a href="">Decreto 1107/1958 - Reglamento de Mensuras (DGC)</a></li>
+                  <li><a href="">BO 13066 - Ley II Nº 24 - DGC</a> </li>
+                  <li><a href="">BO 14092 - Disposición 125/2015 - Conjutos Inmobiliarios (DGC)</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -214,12 +222,14 @@
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                  <a href="">Ordenanza 76/87 - Linea de Ribera LNM</a> <br>
-                  <a href="">Ordenanza 44/91 - Excepción a DNV</a> <br>
-                  <a href="">Decreto 181</a> <br>
-                  <a href="">BO 504</a> <br>
-                  <a href="">BO 419</a> <br>
-                  <a href="">Carta Orgánica</a>
+                <ul>
+                  <li><a href="">Ordenanza 76/87 - Linea de Ribera LNM</a></li>
+                  <li><a href="">Ordenanza 44/91 - Excepción a DNV</a></li>
+                  <li><a href="">Decreto 181</a></li>
+                  <li><a href="">BO 504</a></li>
+                  <li><a href="">BO 419</a></li>
+                  <li><a href="">Carta Orgánica</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -230,14 +240,14 @@
             <h2 id="letra-w">NOVEDADES</h2>
           </div>
 
-          <div style="display: flex;">
+          <div class="novedades">
 
-            <!-- crad novedad 1 -->
+            <!-- card novedad 1 -->
             <div class="card">
               <img src="" class="card-img-top img-news" alt="">
               <div class="card-body">
-                <h4 class="card-title" style="font-size: 1.5rem;">TÍTULO</h4>
-                <p class="card-text" style="text-align: left;">Texto sobre la noticia</p>
+                <h4 class="novedad-titulo">TÍTULO</h4>
+                <p class="novedad-texto">Texto sobre la noticia</p>
                 <div class="d-grid gap-2">
                   <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal1">Leer más</a>
                 </div>
@@ -262,8 +272,8 @@
             <div class="card">
               <img src="" class="card-img-top img-news" alt="">
               <div class="card-body">
-                <h4 class="card-title" style="font-size: 1.5rem;">TÍTULO</h4>
-                <p class="card-text" style="text-align: left;">Texto sobre la noticia</p>
+                <h4 class="novedad-titulo">TÍTULO</h4>
+                <p class="novedad-texto">Texto sobre la noticia</p>
                 <div class="d-grid gap-2">
                   <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal2">Leer más</a>
                 </div>
@@ -288,8 +298,8 @@
             <div class="card">
               <img src="" class="card-img-top img-news" alt="">
               <div class="card-body">
-                <h4 class="card-title" style="font-size: 1.5rem;">TÍTULO</h4>
-                <p class="card-text" style="text-align: left;">Texto sobre la noticia</p>
+                <h4 class="novedad-titulo">TÍTULO</h4>
+                <p class="novedad-texto">Texto sobre la noticia</p>
                 <div class="d-grid gap-2">
                   <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal3">Leer más</a>
                 </div>
@@ -309,34 +319,33 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.8186145629224!2d-55.89795568528054!3d-27.38137961950709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be4df4734bcd%3A0x441561135418a0c2!2sAv.%20Rademacher%203399%2C%20N3301AAQ%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1674282953396!5m2!1ses-419!2sar" 
-              width="1349" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade">
         </iframe>
 
         <footer id="contacto">
           <div class="info-contacto">
-              <ul>
-                  <li>Lunes a Viernes: 8:00 a 12:00hs</li>
-                  <li>Domicilio: Av. Rademacher 3399, Posadas Misiones</li>
-                  <li>Telefono: 0376 443-2151</li>
-                  <li>agrimensuracolegio@yahoo.com.ar</li>
-              </ul>
-              <div class="social-media">
-                  <a class="navbar-brand" href="#">
-                      <img src="img/icono ig.png" alt="instagram" width="30" >
-                  </a>
-                  <a class="navbar-brand" href="#">
-                      <img src="img/icono fb.png" alt="facebook" width="40" >
-                  </a>
-                  <a class="navbar-brand" href="#">
-                      <img src="img/icono tw.png" alt="twitter" width="30" >
-                  </a>
-              </div>
+            <ul>
+                <li>Lunes a Viernes: 8:00 a 12:00hs</li>
+                <li>Domicilio: Av. Rademacher 3399, Posadas Misiones</li>
+                <li>Telefono: 0376 443-2151</li>
+                <li>agrimensuracolegio@yahoo.com.ar</li>
+            </ul>
+            <div class="social-media">
+                <a class="navbar-brand" href="#">
+                    <img src="img/icono ig.png" alt="instagram" width="30" >
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/icono fb.png" alt="facebook" width="40" >
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="img/icono tw.png" alt="twitter" width="30" >
+                </a>
+            </div>
           </div>
 
           <form>
