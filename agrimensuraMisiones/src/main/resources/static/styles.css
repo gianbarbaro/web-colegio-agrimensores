@@ -90,7 +90,7 @@ header.active .nav-menu {
 }
 
 .first {
-    background: url(./img/textura\ papel\ con\ fondo.png) no-repeat center center fixed;
+    background: url(textura\ papel\ con\ fondo.png) no-repeat center center fixed;
     background-size: cover;
     padding-top: 14%;
 }
@@ -101,7 +101,7 @@ header.active .nav-menu {
 }
 
 .second {
-    background: url(./img/textura\ papel\ 1080px_Mesa\ de\ trabajo\ 1.jpg) no-repeat center center fixed;
+    background: url(textura\ papel\ 1080px_Mesa\ de\ trabajo\ 1.jpg) no-repeat center center fixed;
     background-size: cover;
     margin-top: 5%;
 }
@@ -187,7 +187,7 @@ header.active .nav-menu {
 }
 
 .third {
-    background: url(./img/fondo2.jpg) no-repeat center center fixed;
+    background: url(fondo2.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
