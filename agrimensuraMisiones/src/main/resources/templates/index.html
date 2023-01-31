@@ -26,7 +26,7 @@
         <li><a href="#normativas"><button class="navbutton">Normativas</button></a></li>
         <li><a href="#novedades"><button class="navbutton">Novedades</button></a></li>
         <li><a href="#contacto"><button class="navbutton" id="style-contact">Contacto</button></a></li>
-        <li><a href="login.html"><button class="navbutton" id="style-login">Iniciar Sesión</button></a></li>
+        <li><a href="/login"><button class="navbutton" id="style-login">Iniciar Sesión</button></a></li>
       </ul>
     </nav>
   </header>
@@ -69,25 +69,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>110</td>
-          <td>Ariasgago Hector Enzo</td>
-          <td>OBERÁ</td>
-        </tr>
-        <tr>
-          <td>201</td>
-          <td>Baumgratz Rodrigo Oscar</td>
-          <td>PTO. RICO</td>
-        </tr>
-        <tr>
-          <td>85</td>
-          <td>Blanco Delfor</td>
-          <td>POSADAS</td>
-        </tr>
-        <tr>
-          <td>128</td>
-          <td>Camblog Cesar Leonardo</td>
-          <td>POSADAS</td>
+        <tr th:each="partner:${partners}" th:if="${partner.active == true}">
+          <td th:text="${partner.matricula}"></td>
+          <td th:text="${partner.last_name + ' ' + partner.first_name}"></td>
+          <td th:text="${partner.city}"></td>
         </tr>
       </tbody>
     </table>
@@ -96,25 +81,13 @@
       <h2 id="autoridades-encabezado">AUTORIDADES DEL COLEGIO</h2>
 
       <div class="autoridades-fila1">
-        <div class="autoridades-card">
-          <img src="" class="card-img-top" alt="">
+        <div th:each="authority:${authorities}" th:if="${authority.active == true}" class="autoridades-card">
+          <img th:if="${authority.photo != null}" th:src="${'/photo/'} + ${authority.photo.id}" class="card-img-top" alt="">
+          <img th:if="${authority.photo == null}" src="" class="card-img-top" alt="">
           <div class="card-body">
-            <h5 class="card-title">PRESIDENTE</h5>
-            <p class="card-text">Ingreniero Agrimensor <br> Mauricio Carlos Vera <br> Mat. Nº 195</p>
-          </div>
-        </div>
-        <div class="autoridades-card">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">SECRETARIO GENERAL</h5>
-            <p class="card-text">Agrim. Dario Omar <br> Sanchez Escurra <br> Mat. Nº 194</p>
-          </div>
-        </div>
-        <div class="autoridades-card">
-          <img src="" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">TESORERO</h5>
-            <p class="card-text">Agrim. Ernesto <br> Mariano Errecar <br> Mat. Nº 185</p>
+            <h5 th:text="${authority.cargo}" class="card-title"></h5>
+            <p th:text="${authority.first_name + ' ' + authority.last_name}" class="card-text"></p>
+            <p th:text="${'Mat. Nº ' + authority.matricula}" class="card-text"></p>
           </div>
         </div>
       </div>
@@ -240,85 +213,32 @@
             <h2 id="letra-w">NOVEDADES</h2>
           </div>
 
-          <div class="novedades">
-
-            <!-- card novedad 1 -->
+          <div th:each="article, custStat:${articles}" th:if="${article.visible == true}" class="novedades">
+            <!-- card novedad -->
             <div class="card">
-              <img src="" class="card-img-top img-news" alt="">
               <div class="card-body">
-                <h4 class="novedad-titulo">TÍTULO</h4>
-                <p class="novedad-texto">Texto sobre la noticia</p>
+                <h3 th:text="${article.title}" class="novedad-titulo"></h3>
+                <p th:text="${article.short_content}" class="novedad-texto"></p>
+                <p th:text="${'publicado el ' + article.created_at.getDate + '-' + (article.created_at.getMonth + 1) + '-' + (article.created_at.getYear + 1900)}" style="margin: 0 3% 0; font-size: 75%;"></p>
                 <div class="d-grid gap-2">
                   <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal1">Leer más</a>
                 </div>
               </div>
             </div>
-            <!-- modal 1 -->
+
+            <!-- modal -->
             <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">TITULO</h1>
+                    <h1 th:text="${article.title}" class="modal-title fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    Texto sobre la noticia
-                  </div>
+                  <div th:text="${article.content}" class="modal-body"></div>
                 </div>
               </div>
             </div>
 
-            <!-- card novedad 2 -->
-            <div class="card">
-              <img src="" class="card-img-top img-news" alt="">
-              <div class="card-body">
-                <h4 class="novedad-titulo">TÍTULO</h4>
-                <p class="novedad-texto">Texto sobre la noticia</p>
-                <div class="d-grid gap-2">
-                  <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal2">Leer más</a>
-                </div>
-              </div>
-            </div>
-            <!-- modal 2 -->
-            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">TITULO</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Texto sobre la noticia
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- card novedad 3 -->
-            <div class="card">
-              <img src="" class="card-img-top img-news" alt="">
-              <div class="card-body">
-                <h4 class="novedad-titulo">TÍTULO</h4>
-                <p class="novedad-texto">Texto sobre la noticia</p>
-                <div class="d-grid gap-2">
-                  <a href="" class="btn-news" data-bs-toggle="modal" data-bs-target="#modal3">Leer más</a>
-                </div>
-              </div>
-            </div> 
-            <!-- modal 3 -->
-            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">TITULO</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Texto sobre la noticia
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 

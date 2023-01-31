@@ -184,6 +184,7 @@ header.active .nav-menu {
     text-align: center;
     font-size: 90%;
     margin-top: 2%;
+    margin-bottom: 0;
 }
 
 .third {
@@ -197,6 +198,7 @@ header.active .nav-menu {
     padding-bottom: 0;
     padding-left: 42%;
     display: flex;
+    margin-bottom: 5%;
 }
 
 .accordion {
@@ -226,23 +228,31 @@ header.active .nav-menu {
 }
 
 .novedad-titulo {
+    text-transform: uppercase;
     text-align: center;
+    color: #7ecb5e;
+    margin: 1%;
 }
 
 .novedad-texto {
     text-align: left; 
     font-size: 90%;
+    background-color: #f5f5f5;
+    margin: 1% 2%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 0.5rem;
 }
 
 .card {
-    width: 100%; 
+    width: 80%; 
     border-radius: 2rem;
-    box-shadow: 2px 2px 10px 1px gray;
-    margin: 5% 7%;
+    box-shadow: 1px 1px 5px 1px gray;
+    margin: 0 10% 5%;
 }
 
 .card:hover {
-    box-shadow: 2px 2px 20px 1px rgb(100, 100, 100);
+    box-shadow: 1px 1px 5px 1px rgb(100, 100, 100);
     transform: translateY(-2%);
 }
 
@@ -260,8 +270,11 @@ header.active .nav-menu {
 .btn-news {
     background-color: #7ecb5e;
     color: white;
-    padding: 4%;
-    border-radius: 1rem;
+    padding: 1%;
+    width: 10%;
+    font-size: 85%;
+    margin-left: 44%;
+    border-radius: 0.5rem;
     text-align: center;
 }
 
@@ -308,10 +321,6 @@ form {
         margin-left: 10%;
     }
 
-    .card {
-        margin: 5% 4%;
-    }
-
     form {
         width: 40%;
     }
@@ -327,6 +336,10 @@ form {
     .card-title, .card-text {
         font-size: 80%;
         margin-left: 15%;
+    }
+
+    .btn-news {
+        font-size: 80%;
     }
 
     footer {
@@ -405,6 +418,18 @@ form {
         margin-left: 20%;
     }
 
+    .novedad-titulo {
+        font-size: 100%;
+    }
+    
+    .novedad-texto {
+        font-size: 70%;
+    }
+
+    .btn-news {
+        font-size: 60%;
+    }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -462,8 +487,13 @@ form {
     }
 
     .card {
-        width: 50%; 
-        margin: 5% 25%;
+        width: 80%; 
+        margin: 5% 10%;
+    }
+
+    .btn-news {
+        width: 20%;
+        margin-left: 40%;
     }
 
     .img-news {
@@ -554,11 +584,6 @@ form {
 
     .novedades {
         display: block;
-    }
-
-    .card {
-        width: 60%; 
-        margin: 5% 20%;
     }
 
     .img-news {
@@ -669,11 +694,6 @@ form {
 
     .novedades {
         display: block;
-    }
-
-    .card {
-        width: 70%; 
-        margin: 5% 15%;
     }
 
     .img-news {
